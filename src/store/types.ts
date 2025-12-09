@@ -1,0 +1,52 @@
+// export interface Vacancy {
+//   id: string;
+//   title: string;
+//   salaryFrom: number | null;
+//   salaryTo: number | null;
+//   currency: string | null;
+//   experience: string;
+//   company: string;
+//   city: string;
+//   remoteType: "Офис" | "Можно удалённо" | "Гибрид";
+//   url: string;
+// }
+
+export interface Vacancy {
+  id: string;
+  name: string;
+  salary: {
+    from: number | null;
+    to: number | null;
+    currency: string | null;
+  } | null;
+  experience: {
+    id: string;
+    name: string;
+  } | null;
+  employer: {
+    name: string;
+  } | null;
+  area: {
+    name: string;
+  } | null;
+  address: {
+    city: string | null;
+  } | null;
+  schedule: {
+    id: string;
+    name: string;
+  } | null;
+  alternate_url: string;
+}
+
+export interface VacanciesState {
+  items: Vacancy[];
+  isLoading: boolean;
+  error: string | null;
+  page: number;
+  totalPages: number;
+  search: string;
+  skills: string[];
+  city: string | null;
+  perPage: number;
+}
