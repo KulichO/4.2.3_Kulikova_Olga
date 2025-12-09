@@ -1,5 +1,3 @@
-// src/modules/vacancies/PaginationBlock.test.tsx
-
 import { render, screen, userEvent } from "../../test-utils";
 import { it, expect, beforeEach, vi } from "vitest";
 import { PaginationBlock } from "./PaginationBlock";

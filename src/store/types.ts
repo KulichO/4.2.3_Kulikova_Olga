@@ -1,16 +1,3 @@
-// export interface Vacancy {
-//   id: string;
-//   title: string;
-//   salaryFrom: number | null;
-//   salaryTo: number | null;
-//   currency: string | null;
-//   experience: string;
-//   company: string;
-//   city: string;
-//   remoteType: "Офис" | "Можно удалённо" | "Гибрид";
-//   url: string;
-// }
-
 export interface Vacancy {
   id: string;
   name: string;
