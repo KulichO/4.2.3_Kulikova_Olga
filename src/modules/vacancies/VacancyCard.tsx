@@ -80,7 +80,7 @@ export function VacancyCard({ vacancy }: VacancyCardProp) {
   const scheduleInfo = getScheduleBadge(vacancy.schedule?.name);
 
   return (
-    <Card mb={16} w={660} h={250} radius={12} p={24}>
+    <Card mb={16} w={660} h={250} radius={12} pr={24} pl={24}>
       <Text c="brand.9" fz={20} fw={600} pb={8}>
         {jobName}
       </Text>
